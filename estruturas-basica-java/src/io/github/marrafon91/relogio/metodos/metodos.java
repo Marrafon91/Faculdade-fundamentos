@@ -1,3 +1,7 @@
+package io.github.marrafon91.relogio.metodos;
+
+import io.github.marrafon91.relogio.despertador.Despertador;
+
 public class metodos {
 
     public static void main(String[] args) {
@@ -13,7 +17,6 @@ public class metodos {
     // static void ativarSoneca() {
     //    System.out.println("Mais 5 minutos");
     // }
-    
 
     // static String agendarAlarme(int hora, int minutos) {
     //     return "\nSeu alarme foi configurado as " + hora + ":" + minutos + "h";

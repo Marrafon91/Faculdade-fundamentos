@@ -1,5 +1,7 @@
+package io.github.marrafon91.relogio.despertador;
+
 public class Despertador {
-    
+
     private int horas;
     private int minutos;
     private int soneca;
@@ -38,11 +40,11 @@ public class Despertador {
         this.soneca = soneca;
     }
 
-    void ativarSoneca() {
-       System.out.println("Mais " + soneca + " minutos");
-    }    
+    public void ativarSoneca() {
+        System.out.println("Mais " + soneca + " minutos");
+    }
 
-    String agendarAlarme() {
+    public String agendarAlarme() {
         return "\nSeu alarme foi configurado as " + horas + ":" + minutos + "h";
     }
 

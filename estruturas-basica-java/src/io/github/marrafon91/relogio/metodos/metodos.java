@@ -1,8 +1,7 @@
 package io.github.marrafon91.relogio.metodos;
-
 import io.github.marrafon91.relogio.despertador.Despertador;
 
-public class metodos {
+public class Metodos {
 
     public static void main(String[] args) {
         // String mensagemDoAlarme = agendarAlarme(12, 30);

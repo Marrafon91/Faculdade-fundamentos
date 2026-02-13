@@ -1,4 +1,4 @@
-package io.github.marrafon91.relogio;
+import io.github.marrafon91.relogio.despertador.Despertador;
 
 public class App {
 
@@ -9,18 +9,13 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
-        // 
-        /*
-         * <tipo> indentificador = valor;
-         * <tipo> indentificador;
-         *
-         * Variaves tem scopos: bloco de comando no qual a variavel foi declarada
-         *
-         */
+        
         String saudacao = "Ola Guilherme";
         test();
         System.out.println(saudacao);
 
-
+        Despertador despertador = new Despertador(12, 30, 5);
+        System.out.println(despertador.agendarAlarme());
+        despertador.ativarSoneca();
     }
 }

@@ -1,3 +1,5 @@
+import calculadora.Calculadora;
+
 import java.math.BigDecimal;
 
 public class Main {
@@ -26,17 +28,24 @@ public class Main {
         double num1 = 2.5;
         double num2 = 7.5;
 
+
         System.out.println(soma);
-        double resultado = soma(5, 5);
-        System.out.println(operador + " : " + resultado);
+        System.out.println(operador + " : " + soma);
 
         boolean ehIgual = num1 < num2;
         System.out.println(!ehIgual);
 
+        Calculadora calculadora = new Calculadora(1.5, 3.5);
+        Calculadora calculadora1 = new Calculadora(1.5, 3.5);
+        Calculadora calculadora2 = new Calculadora(2.0, 4.0);
+
+        System.out.println(calculadora.somaTest());
+        System.out.println(calculadora1.somaTest());
+        System.out.println(calculadora2.somaTest());
+        System.out.println(calculadora1 == calculadora2);
+        System.out.println(calculadora.numero1.equals(calculadora1.numero1));
+
 
     }
 
-    static double soma(double numero1, double numero2) {
-        return  numero1 + numero2;
-    }
 }

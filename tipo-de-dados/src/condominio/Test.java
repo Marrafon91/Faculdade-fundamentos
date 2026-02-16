@@ -1,5 +1,4 @@
-import condominio.Biblioteca;
-import condominio.Piscina;
+package condominio;
 
 public class Test {
 

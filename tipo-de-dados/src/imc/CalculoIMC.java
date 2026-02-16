@@ -1,5 +1,7 @@
 package imc;
 
+import imc.calculoIMC.CalculoDoIMC;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -16,14 +18,16 @@ public class CalculoIMC {
         System.out.print("Digite sua Altura ");
         double altura = sc.nextDouble();
 
-        double imc = calcularIMC(peso, altura);
+        CalculoDoIMC calculoDoIMC = new CalculoDoIMC(peso, altura);
+
+        double imc = calculoDoIMC.calcularIMC(peso, altura);
 
         System.out.printf("Seu IMC é %.2f%n", imc);
 
         sc.close();
     }
-
-    public static double calcularIMC(double peso, double altura) {
-        return peso / (altura * altura);
-    }
+//
+//    public static double calcularIMC(double peso, double altura) {
+//        return peso / (altura * altura);
+//    }
 }

@@ -39,8 +39,10 @@ public class EstruturaRepeticao {
             System.out.println("Você não tem nenhuma tarefa.");
         } else {
             System.out.println("\nSuas tarefas:");
+            int contador = 1;
             for (String t : tarefas) {
-                System.out.println("[ ] " + t);
+                System.out.println("[" + contador + "] " + t);
+                contador++;
             }
         }
         sc.close();

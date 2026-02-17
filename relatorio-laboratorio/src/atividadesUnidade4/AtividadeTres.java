@@ -36,7 +36,7 @@ public class AtividadeTres {
         double celsius = sc.nextDouble();
 
         // Complete o processamento:
-        double fahrenheit = celsius * (9.0/5.0) + 32;
+        double fahrenheit = (celsius *  9.0/5.0) + 32;
 
         System.out.printf("Temperatura Em Fahrenheit: %.2f °F%n", fahrenheit);
 

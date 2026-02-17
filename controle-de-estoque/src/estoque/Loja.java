@@ -52,7 +52,7 @@ public class Loja {
     }
 
     public String getDescontoTotal() {
-        return String.format("%.0f%%", desconto * 100);
+        return String.format("%.2f%%", desconto * 100);
     }
 
     public String resumoDaCompra() {

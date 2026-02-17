@@ -8,8 +8,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite seu nome: ");
-        String nome = sc.nextLine();
-        nome = nome.trim();
+        String nome = sc.nextLine().trim();
         System.out.println("Olá " + nome);
 
         sc.close();

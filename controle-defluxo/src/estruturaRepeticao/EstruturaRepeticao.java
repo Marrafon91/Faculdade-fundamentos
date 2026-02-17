@@ -14,21 +14,36 @@ public class EstruturaRepeticao {
 
         List<String> tarefas = new ArrayList<>();
 
-        String adicionarNovaTarefa = "s";
+        System.out.println("Vamos fazer algumas tarefas (s/n)? ");
+        String adicionarNovaTarefa = sc.nextLine().trim();
+
+        while (!adicionarNovaTarefa.equalsIgnoreCase("s") &&
+                !adicionarNovaTarefa.equalsIgnoreCase("n")) {
+
+            System.out.println("Resposta inválida. Digite apenas (s/n): ");
+            adicionarNovaTarefa = sc.nextLine().trim();
+        }
 
         while (adicionarNovaTarefa.equalsIgnoreCase("s")) {
+
             System.out.println("Informe a tarefa: ");
             String tarefa = sc.nextLine().trim();
+
             tarefas.add(tarefa);
 
             System.out.println("Adicionar nova tarefa (s/n)? ");
             adicionarNovaTarefa = sc.nextLine().trim();
         }
 
-        System.out.println("\nSuas tarefas: ");
-        for (int i = 0; i < tarefas.size(); i++) {
-            System.out.println("[ ] " + tarefas.get(i));
+        if (tarefas.isEmpty()) {
+            System.out.println("Você não tem nenhuma tarefa.");
+        } else {
+            System.out.println("\nSuas tarefas:");
+            for (String t : tarefas) {
+                System.out.println("[ ] " + t);
+            }
         }
-       sc.close();
+        sc.close();
     }
 }
+

@@ -51,6 +51,15 @@ public class Loja {
         }
     }
 
+    public String getDescontoTotal() {
+        return String.format("%.0f%%", desconto * 100);
+    }
+
+    public String resumoDaCompra() {
+        return "Desconto aplicado: " + getDescontoTotal()
+                + "\nValor final: R$ " + String.format("%.2f", valorTotal());
+    }
+
     public double valorTotal() {
         return compra - (compra * desconto);
     }

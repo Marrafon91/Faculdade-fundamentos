@@ -11,12 +11,12 @@ public class Main {
 
         Loja loja = new Loja();
 
-        System.out.print("Cliente premium ? (s/n)");
-        String resposta = sc.next();
+        System.out.print("Cliente premium ? (s/n) ");
+        String resposta = sc.next().trim();
 
         while (!resposta.equalsIgnoreCase("s") && !resposta.equalsIgnoreCase("n")) {
             System.out.print("Resposta inválida, digite (s/n): ");
-            resposta = sc.next();
+            resposta = sc.next().trim();
         }
 
         boolean premiun = resposta.equalsIgnoreCase("s");
@@ -28,8 +28,7 @@ public class Main {
 
         loja.compraDesconto();
 
-        System.out.println("Desconto aplicado: " + (loja.getDesconto() * 100) + "%");
-        System.out.printf("Valor final da compra: R$ %.2f%n", loja.valorTotal());
+        System.out.println(loja.resumoDaCompra());
 
         sc.close();
     }

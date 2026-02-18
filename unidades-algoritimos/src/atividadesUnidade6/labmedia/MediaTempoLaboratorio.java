@@ -1,4 +1,4 @@
-package atividadesUnidade6.exemplos.labmedia;
+package atividadesUnidade6.labmedia;
 
 import java.util.Locale;
 import java.util.Scanner;

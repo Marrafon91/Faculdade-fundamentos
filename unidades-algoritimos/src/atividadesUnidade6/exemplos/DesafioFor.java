@@ -29,13 +29,8 @@ public class DesafioFor {
 
             soma += valor;
 
-            if (valor > maiorValor) {
-                maiorValor = valor;
-            }
-
-            if (valor < menorValor) {
-                menorValor = valor;
-            }
+            maiorValor = Math.max(maiorValor, valor);
+            menorValor = Math.min(menorValor, valor);
         }
 
         double media = soma / quantidade;

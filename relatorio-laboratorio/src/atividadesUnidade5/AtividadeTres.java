@@ -10,15 +10,15 @@ public class AtividadeTres {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int escolha;
+        int opcao;
 
         System.out.println("Escolha um numero entre: 1 e 3 ");
-        escolha = sc.nextInt();
+        opcao = sc.nextInt();
 
-        String mensagem = switch (escolha) {
-            case 1 -> "Emergência";
-            case 2 -> "Consulta de Rotina";
-            case 3 -> "Retirada de Exames";
+        String mensagem = switch (opcao) {
+            case 1 -> "Encaminhando para Emergência";
+            case 2 -> "Agendando Consulta de Rotina";
+            case 3 -> "Preparando Retirada de Exames";
             default -> "Opção Inválida";
         };
         System.out.print(mensagem);

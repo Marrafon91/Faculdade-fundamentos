@@ -15,7 +15,7 @@ public class AtividadeDois {
         System.out.print("Digite a pulsação: ");
         pulsacao = sc.nextInt();
 
-        if (pulsacao <= 60) {
+        if (pulsacao < 60) {
             System.out.print("Bradicardia");
         } else if (pulsacao <= 100) {
             System.out.print("Normal");

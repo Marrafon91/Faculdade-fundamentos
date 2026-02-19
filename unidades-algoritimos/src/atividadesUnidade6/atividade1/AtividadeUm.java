@@ -1,4 +1,4 @@
-package atividadesUnidade6.exemplosWhile;
+package atividadesUnidade6.atividade1;
 
 import java.util.Locale;
 import java.util.Scanner;

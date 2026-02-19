@@ -15,7 +15,7 @@ public class QuantidadeFixa {
 
         System.out.println("Total de 10 medições: ");
         for (int i = 1; i <= 10; i++) {
-            System.out.println("Medição: " + i);
+            System.out.print("Medição " + i + ": ");
             medicao = sc.nextInt();
             soma += medicao;
             count++;

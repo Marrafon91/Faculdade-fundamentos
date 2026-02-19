@@ -12,12 +12,17 @@ public class AtividadeUm {
 
         int soma = 0;
         int cont = 0;
-        int tempo = 0;
 
-        System.out.println("Digite numeros validos e -1 para encerrar! ");
+        System.out.println("Digite -1 para encerrar! ");
 
-        while (tempo != -1) {
-            tempo = sc.nextInt();
+        while (true) {
+
+            int tempo = sc.nextInt();
+
+            if (tempo == -1) {
+                System.out.println("Encerrando... ");
+                break;
+            }
 
             if (tempo < 0) {
                 continue;

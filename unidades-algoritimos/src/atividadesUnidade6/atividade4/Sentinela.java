@@ -11,20 +11,20 @@ public class Sentinela {
 
         int medicao;
         double soma = 0.0;
-        int cont = 0;
+        int count = 0;
 
         System.out.print("Digite as medições: (-1 para sair)");
         medicao = sc.nextInt();
 
         while (medicao != -1) {
             soma += medicao;
-            cont++;
+            count++;
             System.out.print("Digite outra medida: ");
             medicao = sc.nextInt();
         }
 
-        if (cont > 0) {
-            double media = soma / cont;
+        if (count > 0) {
+            double media = soma / count;
             System.out.println("Soma = " + soma);
             System.out.println("Media = " + media);
         } else {

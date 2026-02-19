@@ -1,4 +1,4 @@
-package atividadesUnidade6.exemplos;
+package atividadesUnidade6.exemplosFor;
 
 import java.util.Locale;
 import java.util.Scanner;

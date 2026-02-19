@@ -22,11 +22,11 @@ public class ValidacaoRobusta {
 
         for (int i = 1; i <= amostras; i++) {
             System.out.printf("Informe o tempo da amostra %d (min) ", i);
-            tempo = sc.nextInt();
+            tempo = sc.nextDouble();
 
             while (tempo <= 0) {
                 System.out.println("Tempo invalido, informe novamente: ");
-                tempo = sc.nextInt();
+                tempo = sc.nextDouble();
             }
             soma += tempo;
         }

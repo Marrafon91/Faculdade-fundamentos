@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ValoresPH {
 
-    //      Pedir um valor de pH e aceitar apenas se estiver entre 0 e 14.
+    // Pedir um valor de pH e aceitar apenas se estiver entre 0 e 14.
 
     public static void main(String[] args) {
 

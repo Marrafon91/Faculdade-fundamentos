@@ -19,12 +19,13 @@ public class CalculoIMC {
         double alturaPaciente = sc.nextDouble();
 
         CalculoDoIMC calculoDoIMC = new CalculoDoIMC();
-        double imc = calculoDoIMC.calcularIMC(pesoPaciente,alturaPaciente);
-
-        if (!Double.isNaN(imc)) {
-        System.out.printf("Seu IMC é %.2f%n", imc);
+        try {
+            double imc = calculoDoIMC.calcularIMC(pesoPaciente, alturaPaciente);
+            System.out.printf("Seu IMC é %.2f%n", imc);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
         }
-
+        
         sc.close();
     }
 }

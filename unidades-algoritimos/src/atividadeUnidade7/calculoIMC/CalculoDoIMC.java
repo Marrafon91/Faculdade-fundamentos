@@ -31,8 +31,7 @@ public class CalculoDoIMC {
 
     public double calcularIMC(double peso, double altura) {
         if (peso <= 0 || altura <= 0) {
-            System.out.println("Dados inválidos, digite números positivos.");
-            return Double.NaN;
+            throw new IllegalArgumentException("Dados inválidos");
         }
         return peso / (altura * altura);
     }

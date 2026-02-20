@@ -10,9 +10,9 @@ public class Main {
 
         int A = sc.nextInt();
         int B = sc.nextInt();
-        int SOMA = A + B;
+        int PROD = A * B;
 
-        System.out.println("SOMA = " + SOMA);
+        System.out.println("PROD = " + PROD);
 
         sc.close();
     }

@@ -1,7 +1,9 @@
+package URI;
+
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Uri1010 {
 
     public static void main(String[] args) {
 
@@ -19,6 +21,7 @@ public class Main {
         double valorTotal = ((quantidade1 * preco1) + (quantidade2 * preco2));
 
         System.out.printf("VALOR A PAGAR: R$ %.2f%n", valorTotal);
+
         sc.close();
     }
 }

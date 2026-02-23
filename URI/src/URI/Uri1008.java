@@ -1,7 +1,9 @@
+package URI;
+
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Uri1008 {
 
     public static void main(String[] args) {
 
@@ -16,6 +18,7 @@ public class Main {
 
         System.out.println("NUMBER = " + numeroFuncionario);
         System.out.printf("SALARY = U$ %.2f%n", salario);
+
         sc.close();
     }
 }

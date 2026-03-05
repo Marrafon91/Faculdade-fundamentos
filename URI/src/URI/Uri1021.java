@@ -1,7 +1,9 @@
+package URI;
+
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Uri1021 {
 
     public static void main(String[] args) {
 
@@ -13,7 +15,7 @@ public class Main {
 
         int[] dinheiro = {10000, 5000, 2000, 1000, 500, 200, 100, 50, 25, 10, 5, 1};
 
-        System.out.println("NOTAS:");
+        System.out.println("NOTAS: ");
 
         for (int i = 0; i < dinheiro.length; i++) {
 
@@ -21,10 +23,10 @@ public class Main {
             valor %= dinheiro[i];
 
             if (i == 6) {
-                System.out.println("MOEDAS:");
+                System.out.println("MOEDAS: ");
             }
             if (i < 6) {
-                System.out.printf("%d nota(s) de R$ %.2f%n", quantidade, dinheiro[i] / 100.0);
+                System.out.printf("%d notas(s) de R$ %.2f%n", quantidade, dinheiro[i] / 100.0);
             } else {
                 System.out.printf("%d moeda(s) de R$ %.2f%n", quantidade, dinheiro[i] / 100.0);
             }

@@ -4,6 +4,8 @@ public class CalculoDoIMC {
 
     private Double peso;
     private Double altura;
+    
+
 
     public CalculoDoIMC() {
     }

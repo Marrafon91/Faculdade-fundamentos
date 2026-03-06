@@ -1,7 +1,9 @@
+package URI;
+
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Uri1038 {
 
     public static void main(String[] args) {
 
@@ -26,7 +28,7 @@ public class Main {
         } else if (codigo == 4) {
             preco = 2.00;
             total = preco * quantidade;
-        } else if (codigo == 5) {
+        }  else if (codigo == 5) {
             preco = 1.50;
             total = preco * quantidade;
         }

@@ -1,7 +1,9 @@
+package URI;
+
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Uri1037 {
 
     public static void main(String[] args) {
 
@@ -10,7 +12,7 @@ public class Main {
 
         double x = sc.nextDouble();
 
-        if(x < 0.0) {
+        if (x <= 0.0) {
             System.out.println("Fora de intervalo");
         } else if (x <= 25.00) {
             System.out.println("Intervalo [0,25]");
@@ -20,7 +22,7 @@ public class Main {
             System.out.println("Intervalo (50,75]");
         } else if (x <= 100.00) {
             System.out.println("Intervalo (75,100]");
-        } else if (x > 100.00) {
+        } else {
             System.out.println("Fora de intervalo");
         }
         sc.close();

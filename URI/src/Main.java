@@ -8,29 +8,23 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        double n1 = sc.nextDouble();
-        double n2 = sc.nextDouble();
-        double n3 = sc.nextDouble();
-        double n4 = sc.nextDouble();
+        double x = sc.nextDouble();
+        double y = sc.nextDouble();
 
-        double media = Math.floor((n1 * 2 + n2 * 3 + n3 * 4 + n4 * 1)) / 10;
-
-        if (media >= 7.0) {
-            System.out.printf("Media: %.1f%n", media);
-            System.out.println("Aluno aprovado.");
-        } else if (media < 5.0) {
-            System.out.printf("Media: %.1f%n", media);
-            System.out.println("Aluno reprovado.");
-        } else if (media >= 5.0 && media <= 6.9) {
-            System.out.printf("Media: %.1f%n", media);
-            System.out.println("Aluno em exame.");
-            double notaDoExame = sc.nextDouble();
-            System.out.printf("Nota do exame: %.1f%n", notaDoExame);
-            double mediaFinal = (media + notaDoExame) / 2;
-            if (mediaFinal >= 5.0) {
-                System.out.println("Aluno aprovado.");
-                System.out.printf("Media final: %.1f%n", mediaFinal);
-            }
+        if (x == 0.0 && y == 0.0) {
+            System.out.println("Origem");
+        } else if (x == 0.0) {
+            System.out.println("Eixo Y");
+        } else if (y == 0.0) {
+            System.out.println("Eixo X");
+        } else if (x > 0.0 && y > 0.0) {
+            System.out.println("Q1");
+        } else if (x < 0.0 && y > 0.0) {
+            System.out.println("Q2");
+        } else if (x < 0.0 && y < 0.0) {
+            System.out.println("Q3");
+        } else {
+            System.out.println("Q4");
         }
         sc.close();
     }

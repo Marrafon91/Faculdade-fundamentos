@@ -1,8 +1,10 @@
+package URI;
+
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Uri1045 {
 
     public static void main(String[] args) {
 
@@ -39,7 +41,8 @@ public class Main {
 
             if (A == B && B == C) {
                 System.out.println("TRIANGULO EQUILATERO");
-            } else if (A == B || A == C || B == C) {
+            }
+            else if (A == B || A == C || B == C) {
                 System.out.println("TRIANGULO ISOSCELES");
             }
         }

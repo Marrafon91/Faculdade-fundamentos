@@ -1,7 +1,9 @@
+package URI;
+
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Uri1042 {
 
     public static void main(String[] args) {
 
@@ -30,7 +32,7 @@ public class Main {
             maior = n3;
         }
 
-        meio = n1 + n2 + n3 - menor - maior;
+        meio = n1 + n2 + n3 -  menor - maior;
 
         System.out.println(menor);
         System.out.println(meio);
@@ -39,6 +41,7 @@ public class Main {
         System.out.println(n1);
         System.out.println(n2);
         System.out.println(n3);
+
         sc.close();
     }
 }

@@ -20,18 +20,6 @@ public class EstruturaSelecao {
 
         int opcao = sc.nextInt();
 
-//        if (opcao == 1) {
-//            System.out.println("Bora aprender estruturas em Java.");
-//        } else if (opcao == 2) {
-//            System.out.println("Bora aprender operadores em Java.");
-//        } else if (opcao == 3) {
-//            System.out.println("Bora aprender tipos em Java.");
-//        } else if (opcao == 4) {
-//            System.out.println("Bora aprender variaves em Java.");
-//        } else {
-//            System.out.println("Tudo bem, volte quando quiser Estudar Java.");
-//        }
-
         String mensagem = switch (opcao) {
             case 1 ->  "Bora aprender estruturas em Java.";
             case 2 ->  "Bora aprender operadores em Java.";

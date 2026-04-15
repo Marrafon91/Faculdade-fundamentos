@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41dbc035-c452-469f-99ae-a5766224e9ae" name="Changes" comment="" />
+    <list default="true" id="eb28e43c-bbab-4f21-984e-4465409aada8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../imc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../imc/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/primeiro-programa-java.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,22 +12,23 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
-      <entry key="_C:/Users/Guilherme/Documents/Java-estudo-faculdade/imc" value="39kd7d7pY3dJ09vj8mnXw07eCBo" />
+      <entry key="_C:/Users/Guilherme/Documents/Java-estudo-faculdade/primeiro-programa-java" value="3CJjtTSVWUnh1N2h6nga9qh4zd4" />
     </persistenceIdMap>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="39kd7d7pY3dJ09vj8mnXw07eCBo" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="3CJjtTSVWUnh1N2h6nga9qh4zd4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -38,14 +42,13 @@
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="41dbc035-c452-469f-99ae-a5766224e9ae" name="Changes" comment="" />
-      <created>1771243837599</created>
+      <changelist id="eb28e43c-bbab-4f21-984e-4465409aada8" name="Changes" comment="" />
+      <created>1776110785109</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1771243837599</updated>
+      <updated>1776110785109</updated>
     </task>
     <servers />
   </component>

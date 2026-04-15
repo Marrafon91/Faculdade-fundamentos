@@ -1,0 +1,68 @@
+import funcionarios.entities.FuncionarioProducao;
+import funcionarios.pagamento.FolhaDePagamento;
+import funcionarios.entities.FuncionarioComissionado;
+import funcionarios.entities.FuncionarioPadrao;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class AtividadeA3 {
+
+    public static void main(String[] args) {
+
+        final double SALARIO_FIXO = 2000.0;
+
+        List<FolhaDePagamento> folha = new ArrayList<>();
+
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        FuncionarioPadrao fp = new FuncionarioPadrao();
+        FuncionarioComissionado fc = new FuncionarioComissionado();
+        FuncionarioProducao fp1 = new FuncionarioProducao();
+
+        System.out.println("Digite o nome do funcionario: ");
+        fp.setId(1L);
+        fp.setNome("Fulano");
+        fp.setMatricula("123");
+        fp.setSalarioFixo(SALARIO_FIXO);
+        System.out.println(fp);
+        System.out.println();
+
+        fc.setId(2L);
+        fc.setNome("Pedro");
+        fc.setMatricula("456");
+        fc.setValorDaComissao(1000);
+        fc.setPercentualDeComissao(5);
+        fc.setSalarioFixo(SALARIO_FIXO);
+        System.out.println("########################");
+        System.out.println("Funcionario Comissionado");
+        System.out.println(fc);
+
+
+        fp1.setId(3L);
+        fp1.setNome("Cristiano");
+        fp1.setMatricula("789");
+        fp1.setSalarioFixo(SALARIO_FIXO);
+        fp1.setValorDaPeca(5.0);
+        fp1.setQuantidadeDePecas(100);
+        System.out.println(fp1);
+        System.out.println();
+
+        folha.add(fp);
+        folha.add(fc);
+        folha.add(fp1);
+
+        System.out.println("Total de pessoas cadastradas: " + folha.size());
+
+        for (FolhaDePagamento f : folha) {
+            System.out.println("Nome: " + f.getNome());
+            System.out.println("Matrícula: " + f.getMatricula());
+            System.out.println("Salário final: " + f.calcularSalarioFinal());
+            System.out.println("----------------------");
+        }
+        sc.close();
+    }
+}

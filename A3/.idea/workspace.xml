@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e522341f-ea11-420e-99ab-faf41b858889" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../controle-defluxo/src/estruturaSelecao/EstruturaSelecao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../controle-defluxo/src/estruturaSelecao/EstruturaSelecao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../imc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../imc/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6db28abc-2b6b-4256-8f97-3c3175a8c9b2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/A3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,30 +15,73 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
-      <entry key="_C:/Users/Guilherme/Documents/Java-estudo-faculdade/A3" value="3COAmgfdHEsFsUtZWVaP7Oow2Is" />
+      <entry key="_C:/Users/Guilherme/Documents/Estudos/DSLearn/spring-mongodb-ref-main/A3" value="3COAsh8g1JeDbqTfpZJRAwFikas" />
+      <entry key="_C:/Users/Guilherme/Documents/Java-estudo-faculdade/A3" value="3COn6sSkQIw3pAgeRctGuZmKBca" />
     </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
-  <component name="ProjectId" id="3COAmgfdHEsFsUtZWVaP7Oow2Is" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3COAsh8g1JeDbqTfpZJRAwFikas" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AtividadeA3.executor": "Run",
+    "Application.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/Guilherme/Documents/Estudos/DSLearn/spring-mongodb-ref-main/A3/src/Main.java",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="funcionarios" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AtividadeA3">
+    <configuration name="AtividadeA3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AtividadeA3" />
+      <module name="A3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="A3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AtividadeA3" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -45,11 +91,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e522341f-ea11-420e-99ab-faf41b858889" name="Changes" comment="" />
-      <created>1776246406204</created>
+      <changelist id="6db28abc-2b6b-4256-8f97-3c3175a8c9b2" name="Changes" comment="" />
+      <created>1776246453084</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1776246406204</updated>
+      <updated>1776246453084</updated>
     </task>
     <servers />
   </component>

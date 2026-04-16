@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cc8eb29b-ddc3-4d2e-839d-396b4c7f893d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controle-defluxo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/A3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioComissionado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioComissionado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioPadrao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioPadrao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioProducao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioProducao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/funcionarios/pagamento/FolhaDePagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionarios/pagamento/FolhaDePagamento.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +40,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.EstruturaRepeticao.executor": "Run",
-    "Application.EstruturaSelecao.executor": "Run",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.EstruturaRepeticao.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EstruturaSelecao.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="EstruturaRepeticao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="estruturaRepeticao.EstruturaRepeticao" />

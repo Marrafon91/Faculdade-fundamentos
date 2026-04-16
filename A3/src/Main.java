@@ -16,39 +16,32 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        FuncionarioPadrao fp = new FuncionarioPadrao();
-        FuncionarioComissionado fc = new FuncionarioComissionado();
-        FuncionarioProducao fp1 = new FuncionarioProducao();
+        FuncionarioPadrao funcionarioPadrao = new FuncionarioPadrao();
 
         System.out.println("Digite o nome do funcionario: ");
+        funcionarioPadrao.setNome("Fulano");
+        funcionarioPadrao.setMatricula("123");
+        funcionarioPadrao.calcularSalarioFinal();
 
-        fp.setNome("Fulano");
-        fp.setMatricula("123");
-        fp.calcularSalarioFinal();
-        System.out.println(fp);
-        System.out.println();
+        FuncionarioComissionado funcionarioComissionado = new FuncionarioComissionado();
 
-        fc.setNome("Pedro");
-        fc.setMatricula("456");
-        fc.setValorDaComissao(1000);
-        fc.setPercentualDeComissao(5);
-        fc.calcularSalarioFinal();
-        System.out.println("########################");
-        System.out.println("Funcionario Comissionado");
-        System.out.println(fc);
+        funcionarioComissionado.setNome("Pedro");
+        funcionarioComissionado.setMatricula("456");
+        funcionarioComissionado.setValorDaComissao(2000);
+        funcionarioComissionado.setPercentualDeComissao(5);
+        funcionarioComissionado.calcularSalarioFinal();
 
+        FuncionarioProducao funcionarioProducao = new FuncionarioProducao();
 
-        fp1.setNome("Cristiano");
-        fp1.setMatricula("789");
-        fp1.setValorDaPeca(5.0);
-        fp1.setQuantidadeDePecas(100);
-        fp1.calcularSalarioFinal();
-        System.out.println(fp1);
-        System.out.println();
+        funcionarioProducao.setNome("Cristiano");
+        funcionarioProducao.setMatricula("789");
+        funcionarioProducao.setValorDaPeca(5.0);
+        funcionarioProducao.setQuantidadeDePecas(100);
+        funcionarioProducao.calcularSalarioFinal();
 
-        folha.add(fp);
-        folha.add(fc);
-        folha.add(fp1);
+        folha.add(funcionarioPadrao);
+        folha.add(funcionarioComissionado);
+        folha.add(funcionarioProducao);
 
         System.out.println("Total de pessoas cadastradas: " + folha.size());
 

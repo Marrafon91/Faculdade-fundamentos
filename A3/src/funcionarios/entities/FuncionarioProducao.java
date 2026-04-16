@@ -4,37 +4,38 @@ import funcionarios.pagamento.FolhaDePagamento;
 
 public class FuncionarioProducao extends FolhaDePagamento {
 
-    private Integer quantidadeDePecas;
-    private Double valorDaPeca;
+    private int quantidadeDePecas;
+    private double valorDaPeca;
 
     public FuncionarioProducao() {
     }
 
-    public FuncionarioProducao(long id, String nome, String matricula, double salarioFixo, Integer quantidadeDePecas, Double valorDaPeca) {
-        super(id, nome, matricula, salarioFixo);
+    public FuncionarioProducao(String nome, String matricula, int quantidadeDePecas, double valorDaPeca) {
+        super(nome, matricula);
         this.quantidadeDePecas = quantidadeDePecas;
         this.valorDaPeca = valorDaPeca;
     }
 
-    public Integer getQuantidadeDePecas() {
+    public int getQuantidadeDePecas() {
         return quantidadeDePecas;
     }
 
-    public void setQuantidadeDePecas(Integer quantidadeDePecas) {
+    public void setQuantidadeDePecas(int quantidadeDePecas) {
         this.quantidadeDePecas = quantidadeDePecas;
     }
 
-    public Double getValorDaPeca() {
+    public double getValorDaPeca() {
         return valorDaPeca;
     }
 
-    public void setValorDaPeca(Double valorDaPeca) {
+    public void setValorDaPeca(double valorDaPeca) {
         this.valorDaPeca = valorDaPeca;
     }
 
     @Override
     public double calcularSalarioFinal() {
-        return 0;
+        double valorDaComissao = valorDaPeca * quantidadeDePecas;
+        return getSalarioBase() + valorDaComissao;
     }
 
     @Override
@@ -42,6 +43,7 @@ public class FuncionarioProducao extends FolhaDePagamento {
         return "FuncionarioProducao{" +
                 "quantidadeDePecas=" + quantidadeDePecas +
                 ", valorDaPeca=" + valorDaPeca +
+                ", SalarioFinal=" + calcularSalarioFinal() +
                 '}';
     }
 }

@@ -11,8 +11,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        final double SALARIO_FIXO = 2000.0;
-
         List<FolhaDePagamento> folha = new ArrayList<>();
 
         Locale.setDefault(Locale.US);
@@ -26,7 +24,7 @@ public class Main {
 
         fp.setNome("Fulano");
         fp.setMatricula("123");
-        fp.setSalarioFixo(SALARIO_FIXO);
+        fp.calcularSalarioFinal();
         System.out.println(fp);
         System.out.println();
 
@@ -34,7 +32,7 @@ public class Main {
         fc.setMatricula("456");
         fc.setValorDaComissao(1000);
         fc.setPercentualDeComissao(5);
-        fc.setSalarioFixo(SALARIO_FIXO);
+        fc.calcularSalarioFinal();
         System.out.println("########################");
         System.out.println("Funcionario Comissionado");
         System.out.println(fc);
@@ -42,9 +40,9 @@ public class Main {
 
         fp1.setNome("Cristiano");
         fp1.setMatricula("789");
-        fp1.setSalarioFixo(SALARIO_FIXO);
         fp1.setValorDaPeca(5.0);
         fp1.setQuantidadeDePecas(100);
+        fp1.calcularSalarioFinal();
         System.out.println(fp1);
         System.out.println();
 
@@ -58,8 +56,8 @@ public class Main {
             System.out.println("ID: " + f.getId());
             System.out.println("Nome: " + f.getNome());
             System.out.println("Matrícula: " + f.getMatricula());
-            System.out.println("Salario Fixo: " + f.getSalarioFixo());
-            System.out.println("Salário final: " + f.calcularSalarioFinal());
+            System.out.println("Salario Fixo: " + f.getSalarioBase());
+            System.out.println("Salário final: " + String.format("%.2f", f.calcularSalarioFinal()));
             System.out.println("----------------------");
         }
         sc.close();

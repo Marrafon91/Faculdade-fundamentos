@@ -4,44 +4,45 @@ import funcionarios.pagamento.FolhaDePagamento;
 
 public class FuncionarioComissionado extends FolhaDePagamento {
 
-    private Integer valorDaComissao;
-    private Integer percentualDeComissao;
+    private double valorDaComissao;
+    private double percentualDeComissao;
 
     public FuncionarioComissionado() {
     }
 
-    public FuncionarioComissionado(long id, String nome, String matricula, double salarioFixo, Integer valorDaComissao, Integer percentualDeComissao) {
-        super(id, nome, matricula, salarioFixo);
+    public FuncionarioComissionado(String nome, String matricula, double valorDaComissao, double percentualDeComissao) {
+        super(nome, matricula);
         this.valorDaComissao = valorDaComissao;
         this.percentualDeComissao = percentualDeComissao;
     }
 
-    public Integer getValorDaComissao() {
+    public double getValorDaComissao() {
         return valorDaComissao;
     }
 
-    public void setValorDaComissao(Integer valorDaComissao) {
+    public void setValorDaComissao(double valorDaComissao) {
         this.valorDaComissao = valorDaComissao;
     }
 
-    public Integer getPercentualDeComissao() {
+    public double getPercentualDeComissao() {
         return percentualDeComissao;
     }
 
-    public void setPercentualDeComissao(Integer percentualDeComissao) {
+    public void setPercentualDeComissao(double percentualDeComissao) {
         this.percentualDeComissao = percentualDeComissao;
     }
 
     @Override
     public double calcularSalarioFinal() {
-        return 0;
+        return getSalarioBase() + (valorDaComissao * percentualDeComissao / 100.0);
     }
 
     @Override
     public String toString() {
         return "FuncionarioComissionado{" +
-                "valorDaComissao=" + valorDaComissao +
+                " valorDaComissao=" + valorDaComissao +
                 ", percentualDeComissao=" + percentualDeComissao +
+                ", Salario Final=" + calcularSalarioFinal() +
                 '}';
     }
 }

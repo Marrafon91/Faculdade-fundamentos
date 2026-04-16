@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6db28abc-2b6b-4256-8f97-3c3175a8c9b2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/A3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AtividadeA3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AtividadeA3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioComissionado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioComissionado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioPadrao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioPadrao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioProducao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionarios/entities/FuncionarioProducao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/funcionarios/pagamento/FolhaDePagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcionarios/pagamento/FolhaDePagamento.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +42,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AtividadeA3.executor": "Run",
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/Guilherme/Documents/Estudos/DSLearn/spring-mongodb-ref-main/A3/src/Main.java",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AtividadeA3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Guilherme/Documents/Estudos/DSLearn/spring-mongodb-ref-main/A3/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="funcionarios" />

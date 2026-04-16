@@ -24,14 +24,13 @@ public class AtividadeA3 {
         FuncionarioProducao fp1 = new FuncionarioProducao();
 
         System.out.println("Digite o nome do funcionario: ");
-        fp.setId(1L);
+
         fp.setNome("Fulano");
         fp.setMatricula("123");
         fp.setSalarioFixo(SALARIO_FIXO);
         System.out.println(fp);
         System.out.println();
 
-        fc.setId(2L);
         fc.setNome("Pedro");
         fc.setMatricula("456");
         fc.setValorDaComissao(1000);
@@ -42,7 +41,6 @@ public class AtividadeA3 {
         System.out.println(fc);
 
 
-        fp1.setId(3L);
         fp1.setNome("Cristiano");
         fp1.setMatricula("789");
         fp1.setSalarioFixo(SALARIO_FIXO);
@@ -58,8 +56,10 @@ public class AtividadeA3 {
         System.out.println("Total de pessoas cadastradas: " + folha.size());
 
         for (FolhaDePagamento f : folha) {
+            System.out.println("ID: " + f.getId());
             System.out.println("Nome: " + f.getNome());
             System.out.println("Matrícula: " + f.getMatricula());
+            System.out.println("Salario Fixo: " + f.getSalarioFixo());
             System.out.println("Salário final: " + f.calcularSalarioFinal());
             System.out.println("----------------------");
         }

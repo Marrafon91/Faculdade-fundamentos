@@ -2,17 +2,25 @@ package funcionarios.pagamento;
 
 public abstract class FolhaDePagamento {
 
+    private static long contador = 1;
+    private long id;
     private String nome;
     private String matricula;
-    private double salarioFixo = 2000.0;
+    private double salarioFixo;
 
     public FolhaDePagamento() {
+        this.id = contador++;
     }
 
-    public FolhaDePagamento(String nome, String matricula, double salarioFixo) {
+    public FolhaDePagamento(long id, String nome, String matricula, double salarioFixo) {
+        this.id = contador++;
         this.nome = nome;
         this.matricula = matricula;
         this.salarioFixo = salarioFixo;
+    }
+
+    public long getId() {
+        return id;
     }
 
     public String getNome() {
@@ -43,7 +51,8 @@ public abstract class FolhaDePagamento {
 
     @Override
     public String toString() {
-        return "Nome: " + nome +
+        return "ID: " + id +
+                "\nNome: " + nome +
                 "\nMatricula: " + matricula +
                 "\nSalario Fixo: " + salarioFixo +
                 "\nSalario Final: " + calcularSalarioFinal();

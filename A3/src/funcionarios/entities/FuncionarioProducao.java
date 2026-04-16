@@ -4,45 +4,16 @@ import funcionarios.pagamento.FolhaDePagamento;
 
 public class FuncionarioProducao extends FolhaDePagamento {
 
-    private Long id;
-    private String nome;
-    private String matricula;
     private Integer quantidadeDePecas;
     private Double valorDaPeca;
 
     public FuncionarioProducao() {
     }
 
-    public FuncionarioProducao(Long id, String nome, String matricula, Integer quantidadeDePecas, Double valorDaPeca) {
-        this.id = id;
-        this.nome = nome;
-        this.matricula = matricula;
+    public FuncionarioProducao(long id, String nome, String matricula, double salarioFixo, Integer quantidadeDePecas, Double valorDaPeca) {
+        super(id, nome, matricula, salarioFixo);
         this.quantidadeDePecas = quantidadeDePecas;
         this.valorDaPeca = valorDaPeca;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
     }
 
     public Integer getQuantidadeDePecas() {
@@ -69,10 +40,7 @@ public class FuncionarioProducao extends FolhaDePagamento {
     @Override
     public String toString() {
         return "FuncionarioProducao{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", matricula='" + matricula + '\'' +
-                ", quantidadeDePecas=" + quantidadeDePecas +
+                "quantidadeDePecas=" + quantidadeDePecas +
                 ", valorDaPeca=" + valorDaPeca +
                 '}';
     }

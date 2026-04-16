@@ -15,5 +15,5 @@ public class FuncionarioPadrao extends FolhaDePagamento {
     public double calcularSalarioFinal() {
         return 0;
     }
-
 }
+

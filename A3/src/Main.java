@@ -1,15 +1,14 @@
-import funcionarios.entities.FuncionarioProducao;
-import funcionarios.pagamento.FolhaDePagamento;
 import funcionarios.entities.FuncionarioComissionado;
 import funcionarios.entities.FuncionarioPadrao;
+import funcionarios.entities.FuncionarioProducao;
+import funcionarios.pagamento.FolhaDePagamento;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class AtividadeA3 {
-
+public class Main {
     public static void main(String[] args) {
 
         final double SALARIO_FIXO = 2000.0;

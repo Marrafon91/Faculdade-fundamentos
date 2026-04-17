@@ -15,5 +15,15 @@ public class FuncionarioPadrao extends FolhaDePagamento {
     public double calcularSalarioFinal() {
         return getSalarioBase();
     }
+
+    @Override
+    public String toString() {
+        return "Funcionario Padrão: " +
+                "\nID: " + getId() +
+                "\nNome: " + getNome() +
+                "\nMatricula: " + getMatricula() +
+                "\nSalario Base: " + getSalarioBase() +
+                "\nSalario Final: " + calcularSalarioFinal();
+    }
 }
 

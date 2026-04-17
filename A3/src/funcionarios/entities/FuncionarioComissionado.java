@@ -39,10 +39,12 @@ public class FuncionarioComissionado extends FolhaDePagamento {
 
     @Override
     public String toString() {
-        return "FuncionarioComissionado{" +
-                " valorDaComissao=" + valorDaComissao +
-                ", percentualDeComissao=" + percentualDeComissao +
-                ", Salario Final=" + calcularSalarioFinal() +
-                '}';
+        return  "Funcionario Comissionado: " +
+                "\nID: " + getId() +
+                "\nNome: " + getNome() +
+                "\nSalario Base: " + getSalarioBase() +
+                "\nValor da Comissão: " + valorDaComissao +
+                "\nPorcentagem da Comissão: " + percentualDeComissao +
+                "\nSalario Final: " + calcularSalarioFinal();
     }
 }

@@ -40,10 +40,12 @@ public class FuncionarioProducao extends FolhaDePagamento {
 
     @Override
     public String toString() {
-        return "FuncionarioProducao{" +
-                "quantidadeDePecas=" + quantidadeDePecas +
-                ", valorDaPeca=" + valorDaPeca +
-                ", SalarioFinal=" + calcularSalarioFinal() +
-                '}';
+        return  "Funcionario Produção: " +
+                "\nID: " + getId() +
+                "\nNome: " + getNome() +
+                "\nSalario Base: " + getSalarioBase() +
+                "\nQuantidade de Peças: " + quantidadeDePecas +
+                "\nValor da Peça: " + valorDaPeca +
+                "\nSalario Final: " + calcularSalarioFinal();
     }
 }

@@ -25,15 +25,25 @@ public class AtividadeA3 {
             System.out.println("4 - Folha De Pagamento");
             System.out.println("0 - Sair\n");
             System.out.println("Digite uma das opçpões acima: ");
-            System.out.println("Selecione um numero entre 0 a 4!!!");
 
             opcao = sc.nextInt();
             sc.nextLine();
 
             switch (opcao) {
                 case 1:
-                    System.out.println("Digite o nome do funcionario: ");
-                    String nomePadrao = sc.nextLine();
+                    String nomePadrao;
+                    while (true) {
+                        System.out.println("Digite o nome do funcionario: ");
+                        nomePadrao = sc.nextLine().trim();
+
+                        if (nomePadrao.isEmpty()) {
+                            System.out.println("Nome não pode ser vazio.");
+                        } else if (nomePadrao.matches(".*\\d.*")) {
+                            System.out.println("Nome não pode conter números.");
+                        } else {
+                            break;
+                        }
+                    }
 
                     System.out.println("Digite a Matricula do funcionario: ");
                     String matriculaPadrao = sc.nextLine();
@@ -44,8 +54,19 @@ public class AtividadeA3 {
                     System.out.println("Funcionario Padrão cadastrado com sucesso!");
                     break;
                 case 2:
-                    System.out.println("Digite o nome do funcionario: ");
-                    String nomeComissionado = sc.nextLine();
+                    String nomeComissionado;
+                    while (true) {
+                        System.out.println("Digite o nome do funcionario: ");
+                        nomeComissionado = sc.nextLine().trim();
+
+                        if (nomeComissionado.isEmpty()) {
+                            System.out.println("Nome não pode ser vazio.");
+                        } else if (nomeComissionado.matches(".*\\d.*")) {
+                            System.out.println("Nome não pode conter números.");
+                        } else {
+                            break;
+                        }
+                    }
 
                     System.out.println("Digite a Matricula do funcionario: ");
                     String matriculaComissionado = sc.nextLine();
@@ -63,8 +84,19 @@ public class AtividadeA3 {
                     System.out.println("Funcionario Comissionado cadastrado com sucesso!");
                     break;
                 case 3:
-                    System.out.println("Digite o nome do funcionario: ");
-                    String nomeProducao = sc.nextLine();
+                    String nomeProducao;
+                    while (true) {
+                        System.out.println("Digite o nome do funcionario: ");
+                        nomeProducao = sc.nextLine().trim();
+
+                        if (nomeProducao.isEmpty()) {
+                            System.out.println("Nome não pode ser vazio.");
+                        } else if (nomeProducao.matches(".*\\d.*")) {
+                            System.out.println("Nome não pode conter números.");
+                        } else {
+                            break;
+                        }
+                    }
 
                     System.out.println("Digite a Matricula do funcionario: ");
                     String matriculaProducao = sc.nextLine();
@@ -84,6 +116,7 @@ public class AtividadeA3 {
                 case 4:
                     System.out.println("Folha de Pagamento:");
                     System.out.println("Quantidade de Funcionario: " + folha.size());
+                    System.out.println("----------------------");
                     for (FolhaDePagamento f : folha) {
                         System.out.println(f.toString());
                         System.out.println("----------------------");

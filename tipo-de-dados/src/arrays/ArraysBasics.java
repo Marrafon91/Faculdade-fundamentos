@@ -23,6 +23,6 @@ public class ArraysBasics {
         System.out.println(tarefas1.get(1));
         System.out.println(tarefas1.get(2));
         System.out.println(tarefas1.get(3));
-        System.out.println(tarefas1.size());
+        System.out.println(tarefas1.size(http://localhost:8080/estadio/250));
     }
 }

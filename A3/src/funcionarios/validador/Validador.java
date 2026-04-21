@@ -12,14 +12,14 @@ public class Validador {
         return nome.trim();
     }
 
-    public int validarPositivo(int valor, String campo) {
+    public int validarIntPositivo(int valor, String campo) {
         if (valor <= 0) {
             throw new IllegalArgumentException(campo + " deve ser positivo.");
         }
         return valor;
     }
 
-    public double validarPositivo(double valor, String campo) {
+    public double validarDoublePositivo(double valor, String campo) {
         if (valor <= 0) {
             throw new IllegalArgumentException(campo + " deve ser positivo.");
         }

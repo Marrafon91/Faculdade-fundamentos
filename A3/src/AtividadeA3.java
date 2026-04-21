@@ -29,7 +29,7 @@ public class AtividadeA3 {
             try {
                 int valor = sc.nextInt();
                 sc.nextLine();
-                return validador.validarPositivo(valor, campo);
+                return validador.validarIntPositivo(valor, campo);
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
@@ -41,7 +41,7 @@ public class AtividadeA3 {
             try {
                 double valor = sc.nextDouble();
                 sc.nextLine();
-                return validador.validarPositivo(valor, campo);
+                return validador.validarDoublePositivo(valor, campo);
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
@@ -95,12 +95,7 @@ public class AtividadeA3 {
                     System.out.println("Digite o percentual de comissão: ");
                     double percentual = lerDoublePositivo(sc, validador, "Percentual de comissão");
 
-                    FuncionarioComissionado fc = new FuncionarioComissionado(
-                            nomeComissionado,
-                            matriculaComissionado,
-                            valorComissao,
-                            percentual
-                    );
+                    FuncionarioComissionado fc = new FuncionarioComissionado(nomeComissionado,matriculaComissionado,valorComissao,percentual);
                     folha.add(fc);
 
                     System.out.println("Funcionario Comissionado cadastrado com sucesso!");
@@ -118,12 +113,7 @@ public class AtividadeA3 {
                     System.out.println("Digite o valor da peça: ");
                     double valorPeca = lerDoublePositivo(sc, validador, "Valor da peça");
 
-                    FuncionarioProducao fprod = new FuncionarioProducao(
-                            nomeProducao,
-                            matriculaProducao,
-                            quantidade,
-                            valorPeca
-                    );
+                    FuncionarioProducao fprod = new FuncionarioProducao(nomeProducao,matriculaProducao,quantidade,valorPeca);
                     folha.add(fprod);
 
                     System.out.println("Funcionario de Produção cadastrado com sucesso!");

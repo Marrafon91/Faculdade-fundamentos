@@ -43,6 +43,7 @@ public class FuncionarioProducao extends FolhaDePagamento {
         return  "Funcionario Produção: " +
                 "\nID: " + getId() +
                 "\nNome: " + getNome() +
+                "\nMatricula: " + getMatricula() +
                 "\nSalario Base: " + getSalarioBase() +
                 "\nQuantidade de Peças: " + quantidadeDePecas +
                 "\nValor da Peça: " + valorDaPeca +

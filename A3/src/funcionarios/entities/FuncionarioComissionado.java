@@ -42,6 +42,7 @@ public class FuncionarioComissionado extends FolhaDePagamento {
         return  "Funcionario Comissionado: " +
                 "\nID: " + getId() +
                 "\nNome: " + getNome() +
+                "\nMatricula: " + getMatricula() +
                 "\nSalario Base: " + getSalarioBase() +
                 "\nValor da Comissão: " + valorDaComissao +
                 "\nPorcentagem da Comissão: " + percentualDeComissao +

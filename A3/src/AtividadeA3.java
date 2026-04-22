@@ -125,7 +125,7 @@ public class AtividadeA3 {
                     System.out.println("----------------------");
 
                     for (FolhaDePagamento f : folha) {
-                        System.out.println(f);
+                        System.out.println(f.toString());
                         System.out.println("----------------------");
                     }
                     break;

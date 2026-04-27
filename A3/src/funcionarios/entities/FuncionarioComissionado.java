@@ -45,7 +45,7 @@ public class FuncionarioComissionado extends FolhaDePagamento {
                 "\nMatricula: " + getMatricula() +
                 "\nSalario Base: " + getSalarioBase() +
                 "\nValor da Comissão: " + valorDaComissao +
-                "\nPorcentagem da Comissão: " + percentualDeComissao +
+                "\nPorcentagem da Comissão: " + String.format("%.2f%%", percentualDeComissao) +
                 "\nSalario Final: " + calcularSalarioFinal();
     }
 }

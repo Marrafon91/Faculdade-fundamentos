@@ -9,6 +9,9 @@ public class Validador {
         if (nome.matches(".*\\d.*")) {
             throw new IllegalArgumentException("Nome não pode conter números.");
         }
+        if (!nome.matches("^[a-zA-Z\\s]+$")) {
+            throw new IllegalArgumentException("Nome não pode conter caracteres especiais.");
+        }
         return nome.trim();
     }
 
